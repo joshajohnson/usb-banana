@@ -1,6 +1,6 @@
 # Banana to USB Adaptor
 
-![alt-text](usb.PNG "Assembled Adaptor")  
+![image](usb.JPG "Assembled Adaptor")  
 
 PCB to adapt banana plugs found on most power supplies to a female USB A connector. 
 

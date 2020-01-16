@@ -1,0 +1,139 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_A J1
+U 1 1 5E0C4511
+P 3800 3050
+F 0 "J1" H 3857 3517 50  0000 C CNN
+F 1 "USB_A" H 3857 3426 50  0000 C CNN
+F 2 "Connector_USB:USB_A_Molex_105057_Vertical" H 3950 3000 50  0001 C CNN
+F 3 " ~" H 3950 3000 50  0001 C CNN
+	1    3800 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3450 3800 3550
+Wire Wire Line
+	3700 3550 3700 3450
+$Comp
+L Device:R R1
+U 1 1 5E0C4A07
+P 4700 3100
+F 0 "R1" H 4770 3146 50  0000 L CNN
+F 1 "R" H 4770 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4630 3100 50  0001 C CNN
+F 3 "~" H 4700 3100 50  0001 C CNN
+	1    4700 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3250 4700 3350
+Wire Wire Line
+	4700 3350 4400 3350
+Wire Wire Line
+	4400 3350 4400 3150
+Wire Wire Line
+	4400 3150 4100 3150
+Wire Wire Line
+	4100 3050 4400 3050
+Wire Wire Line
+	4400 3050 4400 2850
+Wire Wire Line
+	4400 2850 4700 2850
+Wire Wire Line
+	4700 2850 4700 2950
+Wire Wire Line
+	4100 2850 4300 2850
+Wire Wire Line
+	4300 2850 4300 2650
+$Comp
+L power:VBUS #PWR0101
+U 1 1 5E0C52DE
+P 4300 2650
+F 0 "#PWR0101" H 4300 2500 50  0001 C CNN
+F 1 "VBUS" H 4315 2823 50  0000 C CNN
+F 2 "" H 4300 2650 50  0001 C CNN
+F 3 "" H 4300 2650 50  0001 C CNN
+	1    4300 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5E0C56C2
+P 3750 3600
+F 0 "#PWR0102" H 3750 3350 50  0001 C CNN
+F 1 "GND" H 3755 3427 50  0000 C CNN
+F 2 "" H 3750 3600 50  0001 C CNN
+F 3 "" H 3750 3600 50  0001 C CNN
+	1    3750 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3550 3750 3550
+Wire Wire Line
+	3750 3600 3750 3550
+Connection ~ 3750 3550
+Wire Wire Line
+	3750 3550 3800 3550
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5E0C6B19
+P 5100 3000
+F 0 "H1" H 5200 3049 50  0000 L CNN
+F 1 "GND" H 5200 2958 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5100 3000 50  0001 C CNN
+F 3 "~" H 5100 3000 50  0001 C CNN
+	1    5100 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3100 5100 3150
+$Comp
+L power:GND #PWR0103
+U 1 1 5E0C7029
+P 5100 3150
+F 0 "#PWR0103" H 5100 2900 50  0001 C CNN
+F 1 "GND" H 5105 2977 50  0000 C CNN
+F 2 "" H 5100 3150 50  0001 C CNN
+F 3 "" H 5100 3150 50  0001 C CNN
+	1    5100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5E0C7C0C
+P 5700 3200
+F 0 "H2" H 5800 3249 50  0000 L CNN
+F 1 "GND" H 5800 3158 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5700 3200 50  0001 C CNN
+F 3 "~" H 5700 3200 50  0001 C CNN
+	1    5700 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 3100 5700 3050
+$Comp
+L power:VBUS #PWR0104
+U 1 1 5E0C7E1F
+P 5700 3050
+F 0 "#PWR0104" H 5700 2900 50  0001 C CNN
+F 1 "VBUS" H 5715 3223 50  0000 C CNN
+F 2 "" H 5700 3050 50  0001 C CNN
+F 3 "" H 5700 3050 50  0001 C CNN
+	1    5700 3050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
